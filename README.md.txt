@@ -1,1 +1,0 @@
-Food Delivery App with reactjs , nodejs , expressjs , mongo db, and socket.io
