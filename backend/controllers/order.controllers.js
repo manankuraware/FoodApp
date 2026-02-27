@@ -3,7 +3,7 @@ import Order from "../models/order.model.js";
 import User from "../models/user.model.js";
 import DeliveryAssignment from "../models/deliveryAssignment.model.js";
 import { sendDeliveryOtpMail } from "../utils/mail.js";
-import Razorpay from "Razorpay";
+import Razorpay from "razorpay";
 import dotenv from "dotenv";
 dotenv.config();
 
