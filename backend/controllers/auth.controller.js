@@ -33,9 +33,9 @@ export const signUp = async (req, res) => {
         const token = await genToken(user._id);
         res.cookie("token", token, {
             // when using http use secure false 
-            secure: false,
+            secure: true,
             // whenver secure false use same site strict 
-            sameSite: "strict",
+            sameSite: "none",
             maxAge: 7 * 24 * 60 * 60 * 1000,
             httpOnly: true
             // httpOnly: true JavaScript on frontend cannot access it (prevents XSS attacks). 
@@ -64,9 +64,9 @@ export const signIn = async (req, res) => {
         const token = await genToken(user._id);
         res.cookie("token", token, {
             // when using http use secure false 
-            secure: false,
+            secure: true,
             // whenver secure false use same site strict 
-            sameSite: "strict",
+            sameSite: "none",
             maxAge: 7 * 24 * 60 * 60 * 1000,
             httpOnly: true
             // httpOnly: true JavaScript on frontend cannot access it (prevents XSS attacks). 
@@ -151,9 +151,9 @@ export const googleAuth = async (req, res) => {
         const token = await genToken(user._id);
         res.cookie("token", token, {
             // when using http use secure false 
-            secure: false,
+            secure: true,
             // whenver secure false use same site strict 
-            sameSite: "strict",
+            sameSite: "none",
             maxAge: 7 * 24 * 60 * 60 * 1000,
             httpOnly: true
             // httpOnly: true JavaScript on frontend cannot access it (prevents XSS attacks). 
