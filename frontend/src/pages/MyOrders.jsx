@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { IoIosArrowRoundBack } from "react-icons/io";
 import UserOrderCard from "../components/UserOrderCard";
-import OwnerOrderCard from "../components/OwnerOrdercard";
+import OwnerOrderCard from "../components/OwnerOrderCard";
 import { useEffect } from "react";
 import { setMyOrders, updateRealtimeOrderStatus } from "../redux/userSlice";
 
