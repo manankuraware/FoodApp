@@ -24,7 +24,7 @@ export default function Nav() {
 
   const handleLogout = async () => {
     try {
-      const result = await axios.post(`${serverUrl}/api/auth/signout`, {
+      const result = await axios.post(`${serverUrl}/api/auth/signout`,{}, {
         withCredentials: true,
       });
       console.log(result);
